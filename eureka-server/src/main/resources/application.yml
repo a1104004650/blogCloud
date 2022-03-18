@@ -1,0 +1,22 @@
+server:
+  port: 8801
+
+spring:
+  application:
+    name: eurekaserver
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 是否注册自己
+    registerWithEureka: true
+    # eureka
+    fetchRegistry: false
+    serviceUrl:
+      # eureka集群分发的时候使用
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+  server:
+    enable-self-preservation: false
+    # 心跳续约时间 默认60*1000
+    eviction-interval-timer-in-ms: 3000
