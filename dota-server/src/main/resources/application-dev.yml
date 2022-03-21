@@ -5,14 +5,22 @@ spring:
   config:
     activate:
       on-profile: dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848 #nacos服务地址
+      discovery:
+        cluster-name: WH #集群名称
+        namespace: 2419bcf6-6d8e-4400-aec5-9272602cf8f8 #devId
   datasource:
-    url: jdbc:mysql://localhost:3306/read_data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/game?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-
-eureka:
-  client:
-    serviceUrl:
-      # 注册
-      defaultZone: http://localhost:8801/eureka
+dotaserver:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule #优先选择统一集群然后随机
+#eureka:
+#  client:
+#    serviceUrl:
+#      # 注册
+#      defaultZone: http://localhost:8801/eureka
