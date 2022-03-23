@@ -16,15 +16,15 @@ import lombok.NoArgsConstructor;
 public class UserDTO extends BaseDTO {
 
     private String nickName;
-    private int age;
+    private Integer age;
     private String birthday;
     private String email;
     private String mobile;
     // 备注
     private String notice;
-    private String id;
+    private Integer id;
     @NotNull
     private String pwd;
-
+    private PointDTO pointDTO;
 
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbc.point.mapper.PointMapper">
+
+    <select id="queryUserPoint" resultType="com.zbc.point.dto.PointDTO">
+        SELECT
+            tp.id,
+            tp.userId,
+            tp.available_points availablePoints,
+            tp.freezing_points freezingPoints,
+            tp.available_curreny availableCurreny,
+            tp.created_date createdDate,
+            tp.created_user createdUser,
+            tp.is_delete isDelete,
+            tp.modified_date modifiedDate,
+            tp.modified_user modifiedUser
+        FROM
+            t_zbc_point tp
+        WHERE
+            tp.userId = #{id}
+    </select>
+
+</mapper>

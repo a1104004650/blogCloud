@@ -15,6 +15,7 @@
         <module>blog-server</module>
         <module>game-server</module>
         <module>user-server</module>
+        <module>point-server</module>
     </modules>
 
     <properties>
