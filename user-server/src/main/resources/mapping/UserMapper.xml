@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbc.user.mapper.UserMapper">
+
+    <select id="queryUserInfo" resultType="com.zbc.user.dto.UserDTO">
+        SELECT
+            tu.id,
+            tu.age,
+            tu.created_date createdDate,
+            tu.email,
+            tu.is_delete isDelete,
+            tu.created_user createdUser,
+            tu.mobile,
+            tu.modified_date modifiedDate,
+            tu.modified_user modifiedUser,
+            tu.nick_name nickName,
+            tu.notice,
+            tu.pwd
+        FROM
+            t_zbc_user tu
+        WHERE
+            tu.id = #{id}
+    </select>
+
+</mapper>

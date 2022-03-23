@@ -19,6 +19,8 @@ spring:
 dotaserver:
   ribbon:
     NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule #优先选择统一集群然后随机
+mybatis:
+   mapper-locations: classpath:mapping/*Mapper.xml
 #eureka:
 #  client:
 #    serviceUrl:

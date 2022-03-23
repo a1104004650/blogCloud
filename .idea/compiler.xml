@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="blog-server" />
-        <module name="dota-server" />
+        <module name="game-server" />
         <module name="eureka-server" />
         <module name="user-server" />
       </profile>
@@ -22,9 +22,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="blog-server" options="-parameters" />
       <module name="blogCloud" options="-parameters" />
-      <module name="dota-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign" options="-parameters" />
+      <module name="game-server" options="-parameters" />
       <module name="user-server" options="-parameters" />
       <module name="warcraft-server" options="-parameters" />
     </option>

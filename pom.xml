@@ -13,7 +13,7 @@
     <modules>
         <module>eureka-server</module>
         <module>blog-server</module>
-        <module>dota-server</module>
+        <module>game-server</module>
         <module>user-server</module>
     </modules>
 
@@ -36,6 +36,23 @@
         <version>2.6.4</version>
         <relativePath/>
     </parent>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions><!-- 去掉springboot默认配置 -->
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency> <!-- 引入log4j2依赖 -->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
