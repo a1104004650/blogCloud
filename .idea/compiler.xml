@@ -7,11 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="blog-server" />
         <module name="game-server" />
+        <module name="user-server" />
+        <module name="blog-server" />
         <module name="point-server" />
         <module name="eureka-server" />
-        <module name="user-server" />
+        <module name="feign-api" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,7 +27,9 @@
       <module name="blogCloud" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign" options="-parameters" />
+      <module name="feign-api" options="-parameters" />
       <module name="game-server" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="point-server" options="-parameters" />
       <module name="user-server" options="-parameters" />
       <module name="warcraft-server" options="-parameters" />

@@ -16,6 +16,8 @@
         <module>game-server</module>
         <module>user-server</module>
         <module>point-server</module>
+        <module>feign-api</module>
+        <module>gateway</module>
     </modules>
 
     <properties>
@@ -53,6 +55,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>

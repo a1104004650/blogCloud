@@ -1,6 +1,6 @@
-package com.zbc.user.clients;
+package com.zbc.feign.client;
 
-import com.zbc.user.dto.PointDTO;
+import com.zbc.feign.dto.PointDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 

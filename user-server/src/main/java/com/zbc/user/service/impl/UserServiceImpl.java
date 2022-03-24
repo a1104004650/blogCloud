@@ -1,7 +1,7 @@
 package com.zbc.user.service.impl;
 
-import com.zbc.user.clients.PointClient;
-import com.zbc.user.dto.PointDTO;
+import com.zbc.feign.client.PointClient;
+import com.zbc.feign.dto.PointDTO;
 import com.zbc.user.dto.UserDTO;
 import com.zbc.user.mapper.UserMapper;
 import com.zbc.user.service.UserService;

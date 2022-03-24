@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/dota-server/pom.xml" />
         <option value="$PROJECT_DIR$/user-service/pom.xml" />
         <option value="$PROJECT_DIR$/pointserver/pom.xml" />
+        <option value="$PROJECT_DIR$/feign-api/pom.xml" />
       </list>
     </option>
   </component>

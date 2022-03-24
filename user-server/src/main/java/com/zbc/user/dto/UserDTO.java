@@ -2,6 +2,7 @@ package com.zbc.user.dto;
 
 import com.sun.istack.internal.NotNull;
 import com.zbc.common.dto.BaseDTO;
+import com.zbc.feign.dto.PointDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

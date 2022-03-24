@@ -1,6 +1,6 @@
-package com.zbc.user.dto;
+package com.zbc.feign.dto;
 
-import com.zbc.common.dto.BaseDTO;
+import com.zbc.feign.common.dto.BaseDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,6 +22,8 @@ public class PointDTO extends BaseDTO {
     private Integer freezingPoints;
     // 可用风暴币
     private Integer availableCurreny;
+
+    private PointFlowDetailDTO pointFlowDetail;
 
 
 }
