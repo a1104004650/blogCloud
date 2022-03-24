@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @MapperScan("com.zbc.user.mapper") //扫描的mapper
 @SpringBootApplication
-@EnableFeignClients(clients = {PointClient.class})
+@EnableFeignClients(clients = {PointClient.class}) // 只需要feign项目中的Point
 public class UserServiceApplication {
 
     public static void main(String[] args) {

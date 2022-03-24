@@ -1,5 +1,5 @@
 spring:
   application:
-    name: gameserver
+    name: gateway
   profiles:
     active: dev

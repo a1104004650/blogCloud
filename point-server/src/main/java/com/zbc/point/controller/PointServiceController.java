@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author StormT1King
  */
 @RestController
-@RequestMapping("/api/point")
+@RequestMapping("/api")
 @Slf4j
 public class PointServiceController {
 
