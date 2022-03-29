@@ -28,3 +28,15 @@ spring:
           uri: lb://pointserver # 目标地址
           predicates: # 断言规则
           - Path=/api/point/** # 路径断言
+      globalcors:
+        add-to-simple-url-handler-mapping: true # 解决options请求被拦截问题
+        '[/**]':
+          allowedMethods:
+            - "GET"
+            - "POST"
+            - "DELETE"
+            - "PUT"
+            - "OPTIONS"
+          allowedHeaders: "*"
+          allowCredentials: true # 允许cookied
+          maxAge: 360000 # 有效期
