@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @FeignClient("pointserver")
 public interface PointClient {
 
-    @PostMapping("/api/queryUserPoint")
+    @PostMapping("/api/point/queryUserPoint")
     PointDTO queryUserPoint(Integer userId);
 
 }

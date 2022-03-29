@@ -13,15 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @author StormT1King
  */
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/user")
 @Slf4j
 public class UserController {
 
     @Autowired
     private UserService userService;
-
     @RequestMapping("/login")
-
     public UserDTO login(@RequestBody UserDTO userDto) {
         log.info("login方法开始执行，用户 {}.", userDto.getId());
         return userService.login(userDto);

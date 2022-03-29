@@ -15,16 +15,16 @@ spring:
         - id: user-server
           uri: lb://userserver # 目标地址
           predicates: # 断言规则
-          - Path=/user/** # 路径断言
+          - Path=/api/user/** # 路径断言
         - id: blog-server
           uri: lb://blogserver # 目标地址
           predicates: # 断言规则
-          - Path=/blog/** # 路径断言
+          - Path=/api/blog/** # 路径断言
         - id: game-server
           uri: lb://gameserver # 目标地址
           predicates: # 断言规则
-          - Path=/game/** # 路径断言
+          - Path=/api/game/** # 路径断言
         - id: point-server
           uri: lb://pointserver # 目标地址
           predicates: # 断言规则
-          - Path=/point/** # 路径断言
+          - Path=/api/point/** # 路径断言
